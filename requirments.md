@@ -16,11 +16,12 @@ The app will allow users to login with their accounts using a variety of authnei
 | FR1  | User Authentication     | Users can log in using multiple authentication methods (email, phone, etc.).|
 | FR2  | Account Management      | Users can create and manage their account with personal information.        |
 | FR3  | User Lookup             | Users can search for and discover other users to initiate communication.    |
-| FR4  | Messaging               | Users can send and receive messages in real time.                           |
-| FR5  | Local Caching           | Messages are cached locally on the user's device during communication.      |
-| FR6  | Data Ownership          | Users retain ownership of messages; no server-side storage by default.      |
-| FR7  | Optional Server Storage | Users may opt-in to store chat history on a server (future feature).        |
-| FR8  | End-to-End Encryption   | Messages are protected using end-to-end encryption.                         |
+| FR4  | Users add other user    | Users add other freinds to keep contact and sned messages later on          |
+| FR5  | Messaging               | Users can send and receive messages in real time.                           |
+| FR6  | Local Caching           | Messages are cached locally on the user's device during communication.      |
+| FR7  | Data Ownership          | Users retain ownership of messages; no server-side storage by default.      |
+| FR8  | Optional Server Storage | Users may opt-in to store chat history on a server (future feature).        |
+| FR9  | End-to-End Encryption   | Messages are protected using end-to-end encryption.                         |
 
 
 
