@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { Inject } from '@angular/core';
+import { CreateUserService } from '../../service/create-user.service';
 
 
 @Component({
@@ -13,4 +15,9 @@ import {MatInputModule} from '@angular/material/input';
 })
 export class RegisterComponent {
 
+  private createUser = inject(CreateUserService);
+
+  regUser(){
+    this.createUser.registerUser();
+  }
 }
