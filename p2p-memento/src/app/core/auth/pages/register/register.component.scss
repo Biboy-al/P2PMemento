@@ -1,0 +1,19 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.mat-card-container{
+    display: inline-block;
+    width: auto;
+
+}
+
+.mat-card-content{
+    display: flex;
+    flex-direction: row;
+}
+
