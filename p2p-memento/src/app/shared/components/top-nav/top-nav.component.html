@@ -1,4 +1,9 @@
 <mat-toolbar class="nav">
   <h1>Memento</h1>
-  <button mat-flat-button>Login</button>
+
+  <div>
+    <button mat-flat-button [routerLink]="['/login']">Login</button>
+    <button mat-flat-button [routerLink]="['/register']">Signup</button>
+  </div>
+
 </mat-toolbar>
