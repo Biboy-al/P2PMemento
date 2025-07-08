@@ -1,1 +1,39 @@
-<p>login works!</p>
+<div class="main-container">
+    <mat-card class="mat-card-container">
+        <mat-card-header>
+            <h2>Login</h2>
+        </mat-card-header>
+    
+        <mat-card-content class="card-content">
+            <p>
+                Register here
+            </p>
+            
+            <form [formGroup]="loginForm">
+                <mat-form-field>
+                    <mat-label>
+                        Email
+                    </mat-label>
+                    <input matInput formControlName="email">
+    
+                </mat-form-field>
+    
+                <mat-form-field >
+                    <mat-label>
+                        password
+                    </mat-label>
+                    <input matInput formControlName="password">
+    
+                </mat-form-field>
+
+            </form>
+
+        
+        </mat-card-content>
+    
+        <mat-card-actions>
+            <button mat-flat-button (click)="loginUser()" [disabled]="!loginForm.valid"> Confirm</button>
+            <button mat-flat-button > Cancle</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
