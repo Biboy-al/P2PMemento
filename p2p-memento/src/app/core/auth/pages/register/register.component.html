@@ -4,32 +4,38 @@
             <h2>Register</h2>
         </mat-card-header>
     
-        <mat-card-content>
+        <mat-card-content class="card-content">
             <p>
                 Register here
             </p>
+
             
-            <mat-form-field class="mat-card-content" >
-                <mat-label>
-                    Email
-                </mat-label>
-                <input matInput>
 
-            </mat-form-field>
+            <form [formGroup]="credForm">
+                <mat-form-field>
+                    <mat-label>
+                        Email
+                    </mat-label>
+                    <input matInput formControlName="email">
+    
+                </mat-form-field>
+    
+                <mat-form-field >
+                    <mat-label>
+                        password
+                    </mat-label>
+                    <input matInput formControlName="password">
+    
+                </mat-form-field>
 
-            <mat-form-field >
-                <mat-label>
-                    password
-                </mat-label>
-                <input matInput>
+            </form>
 
-            </mat-form-field>
         
         </mat-card-content>
     
         <mat-card-actions>
-            <button mat-flat-button (click)="regUser()"> Confirm</button>
-            <button mat-flat-button> Cancle</button>
+            <button mat-flat-button (click)="regUser()" [disabled]="!credForm.valid"> Confirm</button>
+            <button mat-flat-button > Cancle</button>
         </mat-card-actions>
     </mat-card>
 </div>

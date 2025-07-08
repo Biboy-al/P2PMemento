@@ -12,8 +12,18 @@
 
 }
 
-.mat-card-content{
-    display: flex;
-    flex-direction: row;
+.card-content{
+    width:auto;
+    background-color: black;
 }
 
+mat-form-field{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: auto;
+}
+
+form{
+    width: 100%;
+}

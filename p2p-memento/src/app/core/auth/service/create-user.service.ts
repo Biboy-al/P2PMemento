@@ -9,8 +9,8 @@ export class CreateUserService {
     
   }
 
-  registerUser() {
-    createUserWithEmailAndPassword(auth,"biboysalva2@gmail.com", "password" ).then(
+  registerUser(email: string, password: string) {
+    createUserWithEmailAndPassword(auth,email, password ).then(
       (userCred) =>{
         console.log(userCred);
       }
